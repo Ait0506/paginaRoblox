@@ -200,7 +200,7 @@ html {
 
 #box-formulario {
   background-color: white;
-  height: 475px;
+  height: 455px;
   width: 100%;
   padding: 20px 10px;
 }
@@ -218,9 +218,6 @@ html {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
-}
-
-#form-login {
 }
 
 #form-login input {
@@ -332,14 +329,26 @@ html {
   color: black;
 }
 
-#btn-facebook {
-  color: white !important;
-  background-color: #3b5998 !important;
+#contenedor-botones-login p {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 0.75rem;
 }
 
-#btn-facebook:hover {
-  color: #393b3d !important;
-  background-color: #627aad !important;
+#contenedor-botones-login p span {
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+#contenedor-botones-login p span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (min-width: 525px) {
+  #contenedor-botones-login p {
+    font-size: initial;
+  }
 }
 
 #footer-sitio {
