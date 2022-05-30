@@ -1,0 +1,219 @@
+/*Variables*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.button {
+  padding: 5px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: white;
+}
+
+body {
+  background-color: #1d1b1b;
+}
+
+body .header-site {
+  background-color: #c91673;
+  padding: 20px 20px;
+}
+
+@media (min-width: 1300px) {
+  body .header-site {
+    padding: 20px 0;
+  }
+}
+
+body .header-site .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1300px) {
+  body .header-site .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1300px) {
+  body .header-site .container .burger-menu {
+    display: none;
+  }
+}
+
+body .header-site .container .burger-menu i {
+  color: white;
+  font-size: 2.1rem;
+}
+
+body .header-site .container .left-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media (min-width: 1300px) {
+  body .header-site .container .left-header {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
+}
+
+body .header-site .container .left-header .logo {
+  width: 150px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1300px) {
+  body .header-site .container .left-header .logo {
+    margin: unset;
+    margin-right: 40px;
+  }
+}
+
+body .header-site .container .left-header .nav-left {
+  display: none;
+}
+
+@media (min-width: 1300px) {
+  body .header-site .container .left-header .nav-left {
+    display: unset;
+  }
+}
+
+body .header-site .container .left-header .nav-left a {
+  text-decoration: none;
+  color: white;
+  margin-right: 15px;
+}
+
+body .header-site .container .left-header .nav-left a:last-of-type {
+  margin-right: 0;
+}
+
+body .header-site .container .left-header .nav-left .pink-transparent {
+  color: #ff75b6;
+  border-color: #ff75b6;
+}
+
+body .header-site .container .left-header .nav-left .pink-transparent:hover {
+  color: #c91673;
+  background-color: #ff75b6;
+}
+
+body .header-site .container .right-header {
+  display: none;
+}
+
+@media (min-width: 1300px) {
+  body .header-site .container .right-header {
+    display: unset;
+  }
+}
+
+body .header-site .container .right-header .nav-right a {
+  margin-right: 10px;
+}
+
+body .header-site .container .right-header .nav-right .white-transparent:hover {
+  color: black;
+}
+
+body .header-site .container .right-header .nav-right .white-black {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+body .header-site .container .right-header .nav-right .white-black:hover {
+  background-color: #e9e9e9;
+}
+
+body .main-site {
+  padding: 0 25px;
+}
+
+body .main-site .login-card {
+  max-width: 540px;
+  background-color: black;
+  margin: 125px auto 0 auto;
+  padding: 40px 60px 80px 60px;
+  text-align: left;
+}
+
+@media (min-width: 400px) {
+  body .main-site .login-card {
+    padding: 40px 50px 80px 50px;
+    text-align: center;
+  }
+}
+
+body .main-site .login-card h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  padding-left: 15px;
+}
+
+@media (min-width: 400px) {
+  body .main-site .login-card h2 {
+    padding: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  body .main-site .login-card h2 {
+    font-size: 2.5rem;
+  }
+}
+
+body .main-site .login-card .pink-white {
+  background-color: #c91673;
+  border: none;
+  font-weight: 700;
+  border-radius: 24px;
+  font-size: 1.2rem;
+  padding: 12px 22px;
+  white-space: nowrap;
+}
+
+body .main-site .login-card .pink-white:hover {
+  background-color: #B83280;
+}
+/*# sourceMappingURL=styles.css.map */
