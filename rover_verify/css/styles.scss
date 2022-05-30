@@ -39,6 +39,10 @@ body {
 
     @media (min-width: 1300px) {
       padding: 20px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
     }
 
     .container {
@@ -72,7 +76,9 @@ body {
 
         .logo {
           width: 150px;
+          height: 50px;
           margin: 0 auto;
+          cursor: pointer;
 
           @media (min-width: 1300px) {
             margin: unset;
@@ -136,7 +142,7 @@ body {
   }
 
   .main-site {
-    padding: 0 25px;
+    padding: 0 25px 45px 25px;
     .login-card {
       max-width: 540px;
       background-color: black;
@@ -149,6 +155,14 @@ body {
         text-align: center;
       }
 
+      @media (min-width: 900px) {
+        margin: 125px auto 0 auto;
+      }
+
+      @media (min-width: 1300px) {
+        margin: 200px auto 0 auto;
+      }
+
       h2 {
         color: white;
         font-size: 2rem;
@@ -156,7 +170,7 @@ body {
         padding-left: 15px;
 
         @media (min-width: 400px) {
-          padding: 0
+          padding: 0;
         }
 
         @media (min-width: 900px) {
@@ -174,7 +188,64 @@ body {
         white-space: nowrap;
 
         &:hover {
-          background-color: #B83280;
+          background-color: #b83280;
+        }
+      }
+    }
+  }
+
+  .footer-site {
+    background-color: #242526;
+    padding: 120px 0 100px 0;
+
+    .container {
+      display: grid;
+      grid-template-columns: 1;
+      row-gap: 70px;
+
+      @media (min-width: 900px) {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 70px;
+        padding: 0 30px;
+      }
+
+      .imaginary-logo {
+        text-align: center;
+
+        img {
+          width: 265px;
+        }
+        .copyright-text {
+          color: rgba(232, 230, 227, 0.6);
+          margin: 0;
+          margin-bottom: 30px;
+        }
+        a {
+          color: rgb(122, 122, 122);
+          text-decoration: none;
+          font-size: 0.6rem;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .nav-footer {
+        margin: 0 auto;
+        text-align: center;
+        @media (min-width: 900px) { 
+          text-align: unset;
+        }
+        a {
+          display: block;
+          color: rgba(232, 230, 227, 0.5);
+          text-decoration: none;
+          line-height: 2;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
